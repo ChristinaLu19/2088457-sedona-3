@@ -2,7 +2,7 @@
 
 * Студент: [Кристина Лукина](https://up.htmlacademy.ru/htmlcss-individual/3/user/2088457).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-
+* Сайт: [Проект Седона](https://christinalu19.github.io/2088457-sedona-3/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
