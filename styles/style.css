@@ -1,10 +1,11 @@
 @font-face {
-  font-family:"PT Sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -17,29 +18,20 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  color:#333333;
+  color: #333333;
   background-color: #FFFFFF;
   width: 1200px;
 
 }
-ul {
-  list-style: none;
-}
-a {
- text-decoration: none;
-}
+
 .visually-hidden {
   visibility: hidden;
 }
 
-.title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-}
+.page-header {}
 
-.page-header {
-
+.navigation-list {
+  list-style: none;
 }
 
 .navigation-link {
@@ -48,6 +40,7 @@ a {
   font-weight: 700;
   text-align: center;
   color: #000000;
+  text-decoration: none;
 }
 
 .navigation-item-current {
@@ -66,6 +59,7 @@ a {
 
 
 .navigation-user-here {
+  padding: 8px 34px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -75,35 +69,41 @@ a {
   border-radius: 5px;
 }
 
-.main-index {
- text-align: center;
-}
+.main-index {}
 
 .hero {
   background-image: url("../images/index/background-index/hero-mask.svg"), url("../images/index/background-index/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%, 100%;
   background-position: bottom, center;
-
+  text-align: center;
 }
 
 .advantages {
- text-align: center;
+  text-align: center;
 }
 
 .advantages-title {
-
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.advantages-item:nth-child(1), .advantages-item:nth-child(5){
-  background-color:#82B3D3;
+.advantages-list {
+  list-style: none;
 }
 
-.advantages-item:nth-child(2), .advantages-item:nth-child(4) {
+.advantages-item {
+  background-color: #82B3D3;
+}
+
+.advantages-item-2,
+.advantages-item-4 {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(3) {
+.advantages-item-3 {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -111,36 +111,61 @@ a {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .services {
- text-align: center;
+  text-align: center;
 }
 
-.services-item:nth-child(1), .services-item:nth-child(3) {
+.services-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item-1 {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.apartments {
   background-image: url("../images/index/apartments.svg");
   background-repeat: no-repeat;
 }
 
-.food {
+.services-item-2 {
   background-image: url("../images/index/food.svg");
   background-repeat: no-repeat;
 }
 
-.souvenirs {
+.services-item-3 {
+  background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/index/souvenirs.svg");
   background-repeat: no-repeat;
 }
 
-.booking {
+.services-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.booking {
+  text-align: center;
+}
+
+.booking-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .booking-button {
+  padding: 8px 50px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -153,9 +178,19 @@ a {
 }
 
 .newsletters {
-background-image: url("../images/index/background-index/subscrube.jpg");
-background-repeat: no-repeat;
-color: #FFFFFF;
+  background-image: url("../images/index/background-index/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+.newsletters-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .newsletters-form {
@@ -164,6 +199,7 @@ color: #FFFFFF;
 }
 
 .newsletters-button {
+  padding: 8px 50px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -173,24 +209,26 @@ color: #FFFFFF;
   color: #FFFFFF;
   box-shadow: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
 }
 
-.page-footer {
+.page-footer {}
 
+.footer-social-contact {
+  list-style: none;
 }
 
-.vk {
+.vk-link {
   background-image: url(../images/social-vk.svg);
   background-repeat: no-repeat;
 }
 
-.telegram {
+.telegram-link {
   background-image: url(../images/social-telegram.svg);
   background-repeat: no-repeat;
 }
 
-.youtube {
+.youtube-link {
   background-image: url(../images/social-youtube.svg);
   background-repeat: no-repeat;
 
@@ -202,6 +240,7 @@ color: #FFFFFF;
   line-height: 40px;
   font-weight: 400;
   color: #000000;
+  text-decoration: none;
 }
 
 .footer-contact-link-htmlacademy {
@@ -212,5 +251,294 @@ color: #FFFFFF;
 .wrapper {
   background-image: url("../images/catalog/backgroud-catalog/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-size: cover;
+}
+
+.header-inner {
+  color: #FFFFFF;
+}
+
+.header-inner-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-link-index {
+  background-image: url(../images/catalog/home.svg);
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-link-hotel {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.catalog-filters-group input[type="text"] {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #F2F2F2;
+  box-shadow: none;
+  border: none;
+}
+
+.field-1 {
+  border-radius: 2px 0 0 2px;
+}
+
+.field-2 {
+  border-radius: 0 2px 2px 0;
+}
+
+.button-submit {
+  font-family: "PT Sans", sans-serif;
+  padding: 8px 50px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+}
+
+
+.button-reset {
+  font-family: "PT Sans", sans-serif;
+  padding: 8px 50px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+.catalog-hotel-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-control {
+  padding: 14px 131px 14px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  border-radius: 2px;
+}
+
+.page-view-list {
+  list-style: none;
+}
+
+.page-view-link {
+  border: #000000 solid 2px;
+  border-radius: 2px;
+}
+
+.link-tile {
+  background-image: url(../images/catalog/tile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link-card {
+  background-image: url(../images/catalog/card.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link-list {
+  background-image: url(../images/catalog/list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hotel-list {
+  list-style: none;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-card-group, .hotel-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.show-more {
+  padding: 8px 26px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  border-radius: 5px;
+}
+
+.favorites {
+  font-family: "PT Sans", sans-serif;
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #82B3D3;
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.in-favorites {
+  font-family: "PT Sans", sans-serif;
+  padding: 8px 18px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #7DB54F;
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.rating-result {
+  padding: 9px 22px 8px 23px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+}
+
+.number-of-stars {
+  background-image: url(../images/catalog/star.svg);
+  background-repeat: no-repeat;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-link {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 5px;
+}
+
+.pagination-cuttent {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+}
+
+.pagination-next {
+  padding: 16px 22px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+}
+
+
+.newsletters-catalog {
+  color: #000000;
+  text-align: center;
+}
+
+.newsletters-catalog-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.newsletters-catalog-form {
+  background-color: #F2F2F2;
+  border-radius: 5px;
+}
+
+.newsletters-catalog-button {
+  padding: 8px 50px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  box-shadow: none;
+  border: none;
+  border-radius: 0 5px 5px 0;
 }
